@@ -14,7 +14,7 @@ function App() {
           <NavBar onChangePage={setPage} />
           <Switch>
               <Route path="/about">
-                  
+                  <About></About>
               </Route>
               <Route path="/pokedex">
                   <PokeDex/>
