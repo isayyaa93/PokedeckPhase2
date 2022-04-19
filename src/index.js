@@ -7,15 +7,7 @@ import { BrowserRouter } from "react-router-dom"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-<<<<<<< HEAD
-  
-    <App />
-  
-);
-
-=======
     <BrowserRouter>
         <App />
     </BrowserRouter>, 
 );
->>>>>>> origin/emmanuel-branch
