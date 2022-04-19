@@ -1,10 +1,11 @@
 
 import React, { useState } from "react"
-import {Route, Routes} from 'react-router-dom'
+import {Route} from 'react-router-dom'
 import NavBar from './components/NavBar'
 import Home from './components/Home';
 import About from './components/About'
 import PokeDex from './components/PokeDex';
+import { Switch } from "react-router-dom";
 
 function App() {
   const [page, setPage] = useState("/")
@@ -12,9 +13,9 @@ function App() {
   return (
       <div>
           <NavBar onChangePage={setPage} />
-          <Routes>
+          <Switch>
               <Route path="/about">
-                  
+                  <About />
               </Route>
               <Route path="/pokedex">
                   <PokeDex/>
@@ -25,7 +26,7 @@ function App() {
               <Route path="*">
                   <h1>404 not found</h1>
               </Route>
-          </Routes>
+          </Switch>
       </div>
   );
 }

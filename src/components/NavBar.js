@@ -5,8 +5,8 @@ function NavBar() {
     return (
         <nav>
             <NavLink exact to="/">Home</NavLink>
-            <NavLink to="/about">About</NavLink>
             <NavLink to="/pokedex">PokeDex</NavLink>
+            <NavLink to="/about">About</NavLink>
         </nav>
     );
 }

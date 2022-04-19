@@ -4,12 +4,12 @@ import PokemonThumbnail from './PokemonThumbnail'
 
 const PokeDex = () => {
     const[allPokemons, setAllPokemons] = useState([])
-  const [loadMore, setLoadMore] = useState("https://pokeapi.co/api/v2/pokemon?limit=20")
+  const [loadMore, setLoadMore] = useState("https://pokeapi.co/api/v2/pokemon")
 
   const getAllPokemons = async () => {
     const res = await fetch(loadMore)
     const data = await res.json()
-
+    console.log(data)
     setLoadMore(data.next)
 
     function createPokemonObject (result) {
@@ -30,6 +30,13 @@ const PokeDex = () => {
   },[])
   return(
     <div className="pokemon-container">
+    <input
+        type="text"
+        placeholder="Search your Recent Transactions"
+        onChange={() => console.log("Searching...")}
+      />
+      <button> Search</button>
+
     <div className="all-container">
     {allPokemons.map((pokemon, index) => 
         <PokemonThumbnail 
