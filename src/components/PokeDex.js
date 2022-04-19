@@ -2,14 +2,23 @@ import './App.css';
 import React, {useRef, useState, useEffect} from 'react'
 import PokemonThumbnail from './PokemonThumbnail'
 import SearchBar from './SearchBar';
+import PokemonScreen from './PokemonScreen';
 
+const dummyObject = {
+  name: 'Dummy',
+  sprites: {other: {dream_world:{front_default: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/10.svg" }} },
+  types: [{type:{name: 'grass'}}],
+  stats: [{base_stat: 50, stat:{name: "hp"}}],
+  moves: [{move:{name: 'tackle'}}]  
+}
 
 const PokeDex = () => {
-    const[allPokemons, setAllPokemons] = useState([])
+  const [visible, setVisible] = useState(false)
+  const[allPokemons, setAllPokemons] = useState([])
   const [loadMore, setLoadMore] = useState("https://pokeapi.co/api/v2/pokemon?limit=20")
   const [search, setSearch] = useState("")
   const nameInputRef = useRef() ///i used this useRef to make sure search bar is in focus upon render
-  
+  const [selectedPokemon, setSelectedPokemon] = useState(dummyObject)
   
   const getAllPokemons = async () => {
     const res = await fetch(loadMore)
@@ -21,7 +30,7 @@ const PokeDex = () => {
       result.forEach(async (pokemon) => {
         const res = await fetch(`https://pokeapi.co/api/v2/pokemon/${pokemon.name}`)
         const data = await res.json()
-        
+        console.log(data)
         setAllPokemons(currentList => [...currentList, data])
       })
       
@@ -36,7 +45,8 @@ const PokeDex = () => {
   },[])
   
   const SearchFilteredPokemons = allPokemons.filter(element => element.name.toLowerCase().includes(search.toLowerCase()))
-  
+  console.log(selectedPokemon)
+  console.log('passing by')
   
   return(
     <div className="pokemon-container">
@@ -49,14 +59,21 @@ const PokeDex = () => {
         image={pokemon.sprites.other.dream_world.front_default}
         type={pokemon.types[0].type.name}
         key={index}
+        PokemonData={pokemon}
+        setVisible={setVisible}
+        setSelectedPokemon={setSelectedPokemon}
         />
         )}
 
     </div>
     <button className="load-more" onClick={()=>getAllPokemons()}>Load More</button>
+    {console.log('caught')}
+    <PokemonScreen isVisible={visible} setVisible={setVisible} selectedPokemon={selectedPokemon}/>
 
-</div>
+  </div>
+        
 
+         
   )
 }
 
