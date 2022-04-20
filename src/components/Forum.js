@@ -63,7 +63,7 @@ const Forum = () => {
             </div>
             <div id="forum_page" style={{display: !isVis ? "inherit" : "none"}}>
                 {forumposts.map((element) => {
-                    return (<Post key={element.id} id={element.id}forumpost={element} setUserMessage={setUserMessage}/>)
+                    return (<Post key={element.id} id={element.id} forumpost={element} setUserMessage={setUserMessage} setForumPosts={setForumPosts} />)
                     {console.log('ran past here')}
                 })}
                 <div>
