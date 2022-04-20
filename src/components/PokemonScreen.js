@@ -5,7 +5,7 @@ export default ({ isVisible, setVisible, selectedPokemon}) => {
       <div onClick={() => { return null }} className="pokemon-screen" style={{
         display: isVisible ? "block" : "none" }}>
         <a href="#" className="close-button" onClick={() => { setVisible(false)}}>[x]</a>
-        <strong className="name-fg">{selectedPokemon.name}</strong>
+        <strong className="name-fg">{name}</strong>
         <img className="char-portrait" src={selectedPokemon.sprites.other.dream_world.front_default} />
         {selectedPokemon.types.map((element) => {
         return(
