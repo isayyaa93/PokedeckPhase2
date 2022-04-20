@@ -1,12 +1,17 @@
 import React from 'react'
 
 
-const PokemonThumbnail = ({id, name, image, type}) => {
+
+const PokemonThumbnail = ({id, name, image, type, PokemonData, setVisible, setSelectedPokemon}) => {
 
     const style = `thumb-container ${type}`
-
+    
     return (
-        <div className ={style}>
+        <div className ={style} onClick={() => {
+            setSelectedPokemon(PokemonData)
+            setVisible(true)
+          }}>
+
             <div className ="number">
                 <small>#0{id}</small>
 
@@ -22,6 +27,7 @@ const PokemonThumbnail = ({id, name, image, type}) => {
 
 
         </div>
+        
     )
 
 }
