@@ -50,7 +50,7 @@ const PokeDex = () => {
   
   return(
     <div className="pokemon-container">
-      <SearchBar nameInputRef={nameInputRef} search={search} onSearchChange={setSearch}/>
+      <SearchBar className="search-bar" nameInputRef={nameInputRef} search={search} onSearchChange={setSearch}/>
     <div className="all-container">
     {SearchFilteredPokemons.map((pokemon, index) => 
         <PokemonThumbnail 

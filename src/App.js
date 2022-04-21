@@ -12,6 +12,7 @@ function App() {
   
   return (
       <div>
+          
           <NavBar onChangePage={setPage} />
           <Switch>
               <Route path="/about">
