@@ -24,13 +24,31 @@
 }
 
 .pokemon-screen {
-  background-color: #fff;
-  border: 1px solid blue;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  border: 3px solid blue;
   position: fixed;
-  width: 50%;
-  height: 50vh;
-  bottom: 0;
+  width: 75%;
+  top: 0%;
+  right: 0%;
+  background-color: #fff
+  
   }
+.pokemon-screen .close-button {
+  position: fixed;
+  font-size: 500%;
+  top:0;
+  text-decoration: none;
+}
+.pokemon-screen .char-portrait {
+  position: fixed;
+  top: 3%;
+  right: 15%
+}
+ul {
+  columns: 12
+}
 
 .name-fg {
   font-style: italic;
@@ -38,4 +56,14 @@
   position: flex;
   left: 8%;
   font-family: 'Bebas Neue', cursive;
+}
+
+#sizing {
+  text-align: center;
+  font-size: 2em;
+  font-style: normal
+}
+
+#textsize {
+  text-align: center;
 }
