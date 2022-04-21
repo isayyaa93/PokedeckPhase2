@@ -69,6 +69,11 @@
 	border: 1px solid #6D7815;
 }
 
+.fairy {
+	background-color: teal;
+	border: 1px solid #4924A1;
+}
+
 .dark {
 	background-color: #705848;
 	border: 1px solid #49392F;
@@ -93,7 +98,7 @@
 }
 
 .pokemon-container {
-  width:10;
+  width: auto;
   box-shadow: 3px 3px 3px 3px grey;
   margin:3px;
   background-color: #E0D8D6;
@@ -103,11 +108,12 @@
 .all-container {
   display: grid;
   grid-template-columns: repeat(5, 4fr);
-  grid-auto-rows: 400px
+  grid-auto-rows: auto;
+  grid-auto-columns: auto
 }
 
 .all-container > * {
-  border-style: inset;
+  border-style: thick;
   margin-left: auto;
   margin-right: auto;
 }
@@ -143,7 +149,7 @@
 .thumb-container {
 
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   min-height: 1vh;
 
