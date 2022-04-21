@@ -1,23 +1,19 @@
 export default ({ isVisible, setVisible, selectedPokemon}) => {
-    const {name} = selectedPokemon
-    console.log(selectedPokemon.types)
     return(
       <div onClick={() => { return null }} className="pokemon-screen" style={{
         display: isVisible ? "block" : "none" }}>
         <a href="#" className="close-button" onClick={() => { setVisible(false)}}>[x]</a>
-        <strong className="name-fg">{selectedPokemon.name}</strong>
-        <img className="char-portrait" src={selectedPokemon.sprites.other.dream_world.front_default} />
+        <h2 className="name-fg">{selectedPokemon.name}</h2>
+        {/* <img className="char-portrait" src={selectedPokemon.sprites.other.dream_world.front_default} /> */}
         {selectedPokemon.types.map((element) => {
-        return(
-        <b>{element.type.name}</b>
-        )
+        <h3>{element}</h3>
         })}
         {selectedPokemon.stats.map((element) => {
-        return(<em>{element.stat.name}: {element.base_stat}</em>
-        )})}
+        <h4>{element.stat.name}: {element.base_stat}</h4>
+        })}
         {selectedPokemon.moves.map((element) => {
-        return(<small>{element.move.name}</small>
-        )})}
+        <h5>{element.move.name}</h5>
+        })}
       </div>
     )
   }
