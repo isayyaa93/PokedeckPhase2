@@ -34,8 +34,8 @@
 
 .name-fg {
   font-style: italic;
-  font-size: 25em;
-  position: absolute;
+  font-size: 5em;
+  position: flex;
   left: 8%;
   font-family: 'Bebas Neue', cursive;
 }

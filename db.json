@@ -1,0 +1,22 @@
+{
+  "messages": [
+    {
+      "id": 1,
+      "body": "Welcome to the I&E Pokemon Forum",
+      "username": "TheProphet_I",
+      "image": "https://i.pinimg.com/236x/83/84/be/8384bef420cb69ef15dd9317eec85305--bible-isaiah-prophet-isaiah.jpg"
+    },
+    {
+      "id": 2,
+      "body": "There are no rules just anarchy, but Mewtwo is king",
+      "username": "AmongUs",
+      "image": "https://i.ytimg.com/vi/_fLy6fGw0Z4/maxresdefault.jpg"
+    },
+    {
+      "username": "Tyler",
+      "image": "https://cdn.pixabay.com/photo/2021/12/26/17/31/pokemon-6895600__340.png",
+      "body": "has joined the forum",
+      "id": 6
+    }
+  ]
+}

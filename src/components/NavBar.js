@@ -7,6 +7,7 @@ function NavBar() {
             <NavLink exact to="/">Home</NavLink>
             <NavLink to="/pokedex">PokeDex</NavLink>
             <NavLink to="/about">About</NavLink>
+            <NavLink to="/forum">Forum</NavLink>
         </nav>
     );
 }
