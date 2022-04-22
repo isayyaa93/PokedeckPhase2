@@ -1,13 +1,16 @@
+
+
 export default ({ isVisible, setVisible, selectedPokemon}) => {
     const {name} = selectedPokemon
     console.log(name)
-    console.log(selectedPokemon.types)
+    const style = `thumb-container ${selectedPokemon.types[0].type.name}`
+    console.log(style)
     return(
-      <div onClick={() => { return null }} className="pokemon-screen" style={{
+      <div onClick={() => { return null }} className={style} id="pokemon-screen" style={{
         display: isVisible ? "flex" : "none" }}>
         <a href="#" className="close-button" onClick={() => { setVisible(false)}}>[x]</a>
         <strong className="name-fg">{name}</strong>
-        <img className="char-portrait" src={selectedPokemon.sprites.other.dream_world.front_default} height="500" width="500" />
+        <img className="char-portrait" src={selectedPokemon.sprites.other.dream_world.front_default} height="250" width="250" />
         <h3>TYPE</h3>
         {selectedPokemon.types.map((element) => {
         return(

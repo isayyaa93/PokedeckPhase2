@@ -1,4 +1,9 @@
 
+
+body {
+  /* background-image: url("https://wallpaperaccess.com/full/8621.jpg"); */
+  background-color: #cccccc;
+}
 .normal {
 	background-color: #A8A878;
 	border: 1px solid #6D6D4E;
@@ -151,8 +156,23 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  min-height: 1vh;
-
-
+  min-height: 1vh
 }
 
+#format {
+  font-size: 200%;
+  text-align: center;
+}
+
+#format > * {
+  padding-left:100px;
+  padding-right:100px;
+}
+
+#format input[type=text] {
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  width: 80%;
+  background: white;
+}

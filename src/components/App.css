@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -23,7 +24,7 @@
   color: #61dafb;
 }
 
-.pokemon-screen {
+#pokemon-screen {
   flex-direction: column;
   justify-content: center;
   height: 100%;
@@ -35,19 +36,26 @@
   background-color: #fff
   
   }
-.pokemon-screen .close-button {
+#pokemon-screen .close-button {
   position: fixed;
-  font-size: 500%;
+  font-size: 250%;
   top:0;
   text-decoration: none;
 }
-.pokemon-screen .char-portrait {
+#pokemon-screen .char-portrait {
   position: fixed;
   top: 3%;
-  right: 15%
+  right: 17%
 }
+#pokemon-screen .name-fg {
+    position: fixed;
+    top: 37.5%;
+    left: 60%
+}
+
 ul {
-  columns: 12
+  font-size: 80%;
+  columns: 10
 }
 
 .name-fg {
@@ -67,3 +75,4 @@ ul {
 #textsize {
   text-align: center;
 }
+
