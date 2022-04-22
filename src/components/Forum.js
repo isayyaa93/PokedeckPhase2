@@ -75,9 +75,9 @@ const Forum = () => {
                  
                 <h2 className="choose">1. choose an image to be your avatar</h2>
                 
-                <img id="default1" style={{backgroundColor: highL1 ? "yellow" : "seashell"}}src={images[0]} width="100" height="100" onClick={() => hightLight1()}/>
-                <img id="default2" style={{backgroundColor: highL2 ? "yellow" : "seashell"}}src={images[1]} width="100" height="100" onClick={() => hightLight2()}/>
-                <img id="default3" style={{backgroundColor: highL3 ? "yellow" : "seashell"}}src={images[2]} width="100" height="100" onClick={() => hightLight3()}/>
+                <img className="default1" style={{backgroundColor: highL1 ? "yellow" : "seashell"}}src={images[0]} width="100" height="100" onClick={() => hightLight1()}/>
+                <img className="default2" style={{backgroundColor: highL2 ? "yellow" : "seashell"}}src={images[1]} width="100" height="100" onClick={() => hightLight2()}/>
+                <img className="default3" style={{backgroundColor: highL3 ? "yellow" : "seashell"}}src={images[2]} width="100" height="100" onClick={() => hightLight3()}/>
                 
                 <h2 className="enteruser">2. Enter your username</h2>
                 <input  className="ashbar" type="text" placeholder="Enter UserName " autoComplete="off" value={userName} onChange={e=> setUserName(e.target.value)}/>
