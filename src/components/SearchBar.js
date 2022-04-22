@@ -3,8 +3,8 @@ import React from "react";
 
 function SearchBar({search, onSearchChange, nameInputRef}) {
     return (
-        <nav>
-            <input
+        <nav id="format">
+            <input className="searchbar"
             type="text"
             name="search"
             placeholder="Search Pokemons..."

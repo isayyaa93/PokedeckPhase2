@@ -16,7 +16,7 @@ const PokemonThumbnail = ({id, name, image, type, PokemonData, setVisible, setSe
                 <strong>#0{id}</strong>
 
             </div>
-            <img src={image} alt={name} height='300' width='360' />
+            <img src={image} alt={name} height='200' width='266.8' />
             <div className="detail-wrapper">
                 <h3 id="sizing">
                     {name}

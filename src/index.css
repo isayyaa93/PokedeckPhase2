@@ -109,7 +109,9 @@
   display: grid;
   grid-template-columns: repeat(5, 4fr);
   grid-auto-rows: auto;
-  grid-auto-columns: auto
+  grid-auto-columns: auto;
+  gap: 50px;
+  /*I implmented gap to create space between*/
 }
 
 .all-container > * {
@@ -128,11 +130,14 @@
   -webkit-border-radius: 28;
   -moz-border-radius: 28;
   border-radius: 28px;
-  font-family: Courier New;
+  font-family: Monospace;
   color: #ffffff;
-  font-size: 20px;
+  font-size: 25px;
   padding: 10px 20px 10px 20px;
   text-decoration: none;
+  position: absolute;
+  right: 1200px;
+
 }
 
 .load-more:hover {
@@ -156,3 +161,171 @@
 
 }
 
+.head {
+  position: absolute;
+  right: 100px;
+  top: 50px;
+}
+
+
+.navbar {
+  text-decoration: none;
+  font-size: 50px;
+  color: teal;
+  padding: 30px;
+  font-family: Monospace
+  
+  
+}
+
+.created {
+  font-size: x-large;
+  font-family: Monospace
+}
+
+.snorlex1 {
+  position: absolute;
+  right: 1000px;
+  top: 200px;
+}
+
+.snorlex {
+  position: absolute;
+  bottom: 600px;
+  height: 45%;
+
+  left: 800px;
+
+}
+
+.aboutstyle {
+  font-size: 50px;
+  font-family: Monospace;
+  position: absolute;
+  left: 800px;
+  bottom: 500px;
+}
+
+.searchbar {
+  font-family: monospace;
+  font-size: x-large;
+  border-style: none
+}
+
+.choose {
+  font-family: monospace;
+  position: absolute;
+  top: 120px;
+  left: 350px;
+  font-size: 50px;
+}
+
+.default1 {
+  position: absolute;
+  top: 300px;
+  left: 500px;
+  width: 300px;
+  height: 300px;
+}
+
+.default2 {
+  position: absolute;
+  top: 300px;
+  left: 900px;
+  width: 350px;
+  height: 350px;
+}
+
+.default3 {
+  position: absolute;
+  top: 300px;
+  right: 500px;
+  width: 350px;
+  height: 350px;
+}
+.enteruser{
+  position: absolute;
+  left: 350px;
+  bottom: 450px;
+  font-family: monospace;
+  font-size: 50px;
+}
+
+.ashbar {
+  position: absolute;
+  left: 550px;
+  bottom: 300px;
+  height: 50px;
+  border: dotted;
+  font-family: monospace;
+
+}
+
+.takemebtn {
+  position: absolute;
+  left: 800px;
+  bottom: 300px;
+  height: 50px;
+  font-family: monospace;
+  font-size: 20px;
+  
+}
+
+.usercontainer {
+  padding-top: 50px;
+  position: relative;
+  height: 200px;
+  text-align: center;
+  font-family: monospace;
+  font-size: 20px;
+}
+
+.profile {
+  position: absolute;
+  left: 300px;
+  top: 400px;
+  font-family: monospace;
+  font-size: 50px;
+  
+  
+}
+
+.reply {
+  font-family: monospace;
+}
+
+.textarea {
+  font-size: 30px;
+}
+
+.linkedinlogo {
+
+  position: absolute;
+  left: 300px;
+  bottom: 300px;
+}
+
+.githublogo {
+
+  position: absolute;
+  bottom: 100px;
+  left: 300px;
+  width: 250px;
+  height: 200px;
+}
+
+#format {
+  font-size: 200%;
+  text-align: center;
+}
+#format > * {
+  padding-left:100px;
+  padding-right:100px;
+}
+#format input[type=text] {
+  padding: 15px;
+  font-size: 17px;
+  border: none;
+  width: 80%;
+  background: white;
+}

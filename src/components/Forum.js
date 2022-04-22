@@ -7,7 +7,7 @@ const Forum = () => {
     const [userMessage, setUserMessage] = useState('has joined the forum')
     const [isVis, setIsVis] = useState(true)
     const [forumposts, setForumPosts] = useState([])
-    const images = ["https://i.pinimg.com/550x/cb/33/49/cb3349b86ca661ca61ae9a36d88d70d4.jpg", "https://cdn.pixabay.com/photo/2021/12/26/17/31/pokemon-6895600__340.png", 'https://raw.githubusercontent.com/HybridShivam/Pokemon/master/assets/images/006-Gigantamax.png']
+    const images = ["https://i.pinimg.com/550x/cb/33/49/cb3349b86ca661ca61ae9a36d88d70d4.jpg", "https://pm1.narvii.com/6978/15b82b62f1178d4b4c96ae0c8ff79fb75bc042d1r1-447-459v2_hq.jpg", 'https://clipart.world/wp-content/uploads/2020/08/Gengar-Pokemon-clipart-transparent-background.png']
     
 
 
@@ -52,26 +52,28 @@ const Forum = () => {
     return(
         <div>
             <div id="welcome_box" style={{display: isVis ? "inherit" : "none"}} > 
-                <h1>Welcome to I.E. Forums</h1> 
-                <h2>choose an image to be your avatar</h2>
-                <img src={images[0]} width="100" height="100" onClick={() => setUserImage(images[0])}/>
-                <img src={images[1]} width="100" height="100" onClick={() => setUserImage(images[1])}/>
-                <img src={images[2]} width="100" height="100" onClick={() => setUserImage(images[2])}/>
-                <h2>Enter your username</h2>
-                <input type="text" placeholder="Enter UserName " autoComplete="off" value={userName} onChange={e=> setUserName(e.target.value)}/>
-                <button onClick={createUser}>Finished Take me to the Forum</button>
+                 
+                <h2 className="choose">1. choose an image to be your avatar</h2>
+                
+                <img className="default1" src={images[0]} width="100" height="100" onClick={() => setUserImage(images[0])}/>
+                <img className="default2" src={images[1]} width="100" height="100" onClick={() => setUserImage(images[1])}/>
+                <img className="default3" src={images[2]} width="100" height="100" onClick={() => setUserImage(images[2])}/>
+                
+                <h2 className="enteruser">2. Enter your username</h2>
+                <input  className="ashbar" type="text" placeholder="Enter UserName " autoComplete="off" value={userName} onChange={e=> setUserName(e.target.value)}/>
+                <button class="takemebtn" onClick={createUser}>Finished Take me to the Forum</button>
             </div>
             <div id="forum_page" style={{display: !isVis ? "inherit" : "none"}}>
                 {forumposts.map((element) => {
                     return (<Post key={element.id} id={element.id} forumpost={element} setUserMessage={setUserMessage} setForumPosts={setForumPosts} />)
                     {console.log('ran past here')}
                 })}
-                <div>
-                <img src={userImage} width="50" height="50"></img>
+                <div className="profile">
+                <img src={userImage} width="200px" height="200px"></img>
                 <strong>{userName}</strong>
                 <p id="insertReply"></p>
-                <textarea placeholder="enter your thoughts " autoComplete="off" value= {userMessage} onChange={e=> setUserMessage(e.target.value)}></textarea>
-                <button onClick={postMessage}>Post </button>
+                <textarea className="textarea" placeholder="enter your thoughts " autoComplete="off" value= {userMessage} onChange={e=> setUserMessage(e.target.value)}></textarea>
+                <button onClick={postMessage}>POST</button>
                 </div>
             </div>
         </div>

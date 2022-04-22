@@ -28,8 +28,8 @@
   justify-content: center;
   height: 100%;
   border: 3px solid blue;
-  position: fixed;
-  width: 75%;
+  position: absolute;
+  width: 1000px;
   top: 0%;
   right: 0%;
   background-color: #fff
@@ -40,22 +40,24 @@
   font-size: 500%;
   top:0;
   text-decoration: none;
+  color: teal;
 }
 .pokemon-screen .char-portrait {
-  position: fixed;
-  top: 3%;
-  right: 15%
+  position: absolute;
+  top: 200px;
+  right: 200px;
+  
 }
 ul {
   columns: 12
 }
 
 .name-fg {
-  font-style: italic;
+  font-family: monospace;
   font-size: 5em;
-  position: flex;
-  left: 8%;
-  font-family: 'Bebas Neue', cursive;
+  position: absolute;
+  top: 200px;
+  left: 120px;
 }
 
 #sizing {
@@ -67,3 +69,4 @@ ul {
 #textsize {
   text-align: center;
 }
+

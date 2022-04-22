@@ -20,12 +20,12 @@ const Post = ({forumpost, setForumPosts, setUserMessage}) => {
   }
     }
     return(
-        <div>
-                <img src={image} width="50" height="50"></img>
+        <div className="usercontainer">
+                <img src={image} width="150px" height="150px"></img>
                 <strong>{username}</strong>
                 <p>{body}</p> 
-                <button onClick={() => addReply()}>reply</button>
-                <button onClick={() => deleteMessage()}>delete</button>
+                <button className ="reply" onClick={() => addReply()}>REPLY</button>
+                <button onClick={() => deleteMessage()}>🗑</button>
         </div>
     )
 }
