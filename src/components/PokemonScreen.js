@@ -7,7 +7,7 @@ export default ({ isVisible, setVisible, selectedPokemon}) => {
         display: isVisible ? "flex" : "none" }}>
         <a href="#" className="close-button" onClick={() => { setVisible(false)}}>ⓧ</a>
         <strong className="name-fg">{name}</strong>
-        <img className="char-portrait" src={selectedPokemon.sprites.other.dream_world.front_default} height="250" width="250" />
+        <img className="char-portrait" src={selectedPokemon.sprites.other.dream_world.front_default} height="400" width="400" />
         <h3> TYPE</h3>
         {selectedPokemon.types.map((element) => {
         return(

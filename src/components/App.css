@@ -32,11 +32,12 @@
   width: 1000px;
   top: 0%;
   right: 0%;
-  background-color: #fff
+  background-color: #fff;
+  position: fixed
   
   }
 .pokemon-screen .close-button {
-  position: fixed;
+  position: absolute;
   font-size: 500%;
   top:0;
   text-decoration: none;
@@ -44,20 +45,26 @@
 }
 .pokemon-screen .char-portrait {
   position: absolute;
-  top: 200px;
-  right: 200px;
+  top: 25px;
+  right: 100px;
   
 }
+.pokemon-screen > * {
+  font-size: 24px
+  
+}
+
 ul {
-  columns: 12
+  columns: 6;
+  font-size: 20px
 }
 
 .name-fg {
   font-family: monospace;
   font-size: 5em;
   position: absolute;
-  top: 200px;
-  left: 120px;
+  top: 420px;
+  left: 520px;
 }
 
 #sizing {

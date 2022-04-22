@@ -136,7 +136,7 @@
   padding: 10px 20px 10px 20px;
   text-decoration: none;
   position: absolute;
-  right: 1200px;
+  right: 1000px;
 
 }
 
@@ -185,7 +185,7 @@
 
 .snorlex1 {
   position: absolute;
-  right: 700px;
+  right: 800px;
   top: 200px;
 }
 
@@ -194,7 +194,9 @@
   bottom: 600px;
   height: 45%;
   top: 200px;
-  left: 800px;
+  left: 1100px;
+  
+  
 
 }
 
@@ -203,8 +205,8 @@
   font-family: Monospace;
   position: absolute;
   
-  left: 600px;
-  bottom: 300px;
+  left: 900px;
+  bottom: 297px;
 }
 
 .searchbar {
@@ -279,6 +281,8 @@
   text-align: center;
   font-family: monospace;
   font-size: 20px;
+  border: #4E8234;
+  
 }
 
 .profile {
@@ -302,7 +306,7 @@
 .linkedinlogo {
 
   position: absolute;
-  left: 1200px;
+  left: 1300px;
   bottom: 50px;
 }
 
@@ -310,7 +314,7 @@
 
   position: absolute;
   bottom: 100px;
-  left: 800px;
+  left: 1000px;
   width: 250px;
   height: 150px;
 }
@@ -333,25 +337,26 @@
 
 .emm {
   position: fixed;
-  bottom: 27.5%;
-  left:36.3%;
+  bottom: 25.15%;
+  left:41.3%;
   font-size: 250%;
-  text-decoration: none
+  text-decoration: none;
+  font-family: monospace
 
 }
 
 .isa {
   position: fixed;
-  bottom: 27.5%;
-  left:54.5%;
+  bottom: 25.15%;
+  left:56.5%;
   font-size: 250%;
-  text-decoration: none
-
+  text-decoration: none;
+  font-family: monospace
 }
 #spacing {
   position: fixed;
-  bottom: 24.8%;
-  left:51%;
-  font-size: 250%;
+  bottom: 22.5%;
+  left:53.5%;
+  font-size: 260%;
   font-family: monospace
 }
