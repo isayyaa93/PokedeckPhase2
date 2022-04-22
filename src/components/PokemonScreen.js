@@ -2,8 +2,9 @@ export default ({ isVisible, setVisible, selectedPokemon}) => {
     const {name} = selectedPokemon
     console.log(name)
     console.log(selectedPokemon.types)
+    const style = `pokemon-screen ${selectedPokemon.types[0].type.name}`
     return(
-      <div onClick={() => { return null }} className="pokemon-screen" style={{ 
+      <div onClick={() => { return null }} className= {style} style={{ 
         display: isVisible ? "flex" : "none" }}>
         <a href="#" className="close-button" onClick={() => { setVisible(false)}}>ⓧ</a>
         <strong className="name-fg">{name}</strong>
