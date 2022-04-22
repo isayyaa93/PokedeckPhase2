@@ -6,7 +6,7 @@ function Home() {
 
             
             <div>
-            <img className="snorlex1" src ={"https://wallpapers.com/images/high/cute-pokemon-snorlax-t7wod9bjkjk3a3m2.jpg"} alt={"pokedex"}/>    
+            <img className="snorlex1" src ={"https://www.pngplay.com/wp-content/uploads/12/Snorlax-Pokemon-PNG-HD-Free-File-Download.png"} alt={"pokedex"}/>    
 
            
             </div>
