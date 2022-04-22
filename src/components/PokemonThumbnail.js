@@ -1,5 +1,5 @@
 import React from 'react'
-import './App.css';
+
 
 
 const PokemonThumbnail = ({id, name, image, type, PokemonData, setVisible, setSelectedPokemon}) => {
@@ -13,15 +13,15 @@ const PokemonThumbnail = ({id, name, image, type, PokemonData, setVisible, setSe
           }}>
 
             <div className ="number">
-                <strong>#0{id}</strong>
+                <small>#0{id}</small>
 
             </div>
-            <img src={image} alt={name} height='150' width='266.8' />
+            <img src={image} alt={name} height='200' width='300' />
             <div className="detail-wrapper">
-                <h3 id="sizing">
+                <h3>
                     {name}
                 </h3>
-                <div id="textsize">  Type: {type}</div>
+                <small>Type: {type}</small>
 
             </div>
 

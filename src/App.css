@@ -22,20 +22,3 @@
 .App-link {
   color: #61dafb;
 }
-
-.pokemon-screen {
-  background-color: #fff;
-  border: 1px solid blue;
-  position: fixed;
-  width: 50%;
-  height: 50vh;
-  bottom: 0;
-  }
-
-.name-fg {
-  font-style: italic;
-  font-size: 5em;
-  position: flex;
-  left: 8%;
-  font-family: 'Bebas Neue', cursive;
-}

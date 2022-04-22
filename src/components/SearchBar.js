@@ -3,7 +3,7 @@ import React from "react";
 
 function SearchBar({search, onSearchChange, nameInputRef}) {
     return (
-        <nav id="format">
+        <nav>
             <input
             type="text"
             name="search"

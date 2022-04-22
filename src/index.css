@@ -1,9 +1,4 @@
 
-
-body {
-  /* background-image: url("https://wallpaperaccess.com/full/8621.jpg"); */
-  background-color: #cccccc;
-}
 .normal {
 	background-color: #A8A878;
 	border: 1px solid #6D6D4E;
@@ -74,11 +69,6 @@ body {
 	border: 1px solid #6D7815;
 }
 
-.fairy {
-	background-color: teal;
-	border: 1px solid #4924A1;
-}
-
 .dark {
 	background-color: #705848;
 	border: 1px solid #49392F;
@@ -103,7 +93,7 @@ body {
 }
 
 .pokemon-container {
-  width: auto;
+  width:10;
   box-shadow: 3px 3px 3px 3px grey;
   margin:3px;
   background-color: #E0D8D6;
@@ -113,12 +103,11 @@ body {
 .all-container {
   display: grid;
   grid-template-columns: repeat(5, 4fr);
-  grid-auto-rows: auto;
-  grid-auto-columns: auto
+  grid-auto-rows: 400px
 }
 
 .all-container > * {
-  border-style: thick;
+  border-style: inset;
   margin-left: auto;
   margin-right: auto;
 }
@@ -154,25 +143,10 @@ body {
 .thumb-container {
 
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  min-height: 1vh
+  min-height: 1vh;
+
+
 }
 
-#format {
-  font-size: 200%;
-  text-align: center;
-}
-
-#format > * {
-  padding-left:100px;
-  padding-right:100px;
-}
-
-#format input[type=text] {
-  padding: 15px;
-  font-size: 17px;
-  border: none;
-  width: 80%;
-  background: white;
-}
